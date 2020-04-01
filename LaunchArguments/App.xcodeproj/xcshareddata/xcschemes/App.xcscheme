@@ -66,6 +66,10 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "-animation_speed 1"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "-onboarding_version 12"
             isEnabled = "YES">
          </CommandLineArgument>

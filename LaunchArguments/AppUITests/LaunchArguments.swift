@@ -10,12 +10,12 @@ import Foundation
 
 struct LaunchArguments {
     let myArgument: String?
-    let animationSpeed: Int = 100
+    let animationSpeed: Float = 100
 }
 
 extension LaunchArguments {
     var arguments: [String] {
-        var values: [String] = []
+        var values: [String] = ["-is_ui_test"]
         if let value = myArgument {
             values.append("-my_argument")
             values.append(value)

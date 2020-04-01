@@ -20,7 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
 
         #if DEBUG
-//        window?.layer.speed = 
+        let speed = UserDefaults.standard.float(forKey: "animation_speed")
+        window?.layer.speed = speed
+        print("animation speed:", speed)
         #endif
     }
 
