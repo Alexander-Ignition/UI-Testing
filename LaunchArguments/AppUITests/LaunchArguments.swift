@@ -15,13 +15,12 @@ struct LaunchArguments {
 
 extension LaunchArguments {
     var arguments: [String] {
-        var values: [String] = ["-is_ui_test"]
+        var values: [String] = [
+            "-is_ui_test", "1",
+            "-animation_speed", "\(animationSpeed)"
+        ]
         if let value = myArgument {
             values.append("-my_argument")
-            values.append(value)
-        }
-        if let value = myArgument {
-            values.append("-animation_speed")
             values.append(value)
         }
         return values

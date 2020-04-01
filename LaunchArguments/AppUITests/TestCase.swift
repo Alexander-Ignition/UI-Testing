@@ -13,7 +13,7 @@ class TestCase: XCTestCase {
     var app: XCUIApplication!
 
     func launch(_ arguments: LaunchArguments) {
-        let app = XCUIApplication()
+        app = XCUIApplication()
         app.launchArguments = arguments.arguments
         app.launch()
     }

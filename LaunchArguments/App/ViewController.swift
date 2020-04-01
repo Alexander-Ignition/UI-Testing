@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 
         titleLabel.text = myArgument
 
-        print("Arguments from ProcessInfo")
+        print("Arguments from UserDefaults")
         print("UI Test:", isUITest)
         print("My argument:", String(describing: myArgument))
         print("Onboarding version:", version)
